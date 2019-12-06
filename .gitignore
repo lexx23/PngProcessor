@@ -3,3 +3,8 @@
 ################################################################################
 
 /packages
+/PngProcessor/bin
+/PngProcessor/obj/Debug
+/PngProcessor.Tests/bin/Debug
+/PngProcessor.Tests/obj/Debug
+/.vs/config

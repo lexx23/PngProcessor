@@ -43,7 +43,8 @@ namespace PngProcessor.Tests
                 Thread.Yield();
 
             processor.Remove("1");
-
+            while (processor.Processed == 0)
+                Thread.Yield();
 
             Assert.AreEqual(0, processor.QueueLength);
             Assert.IsNull(processor.GetStatus("1"));

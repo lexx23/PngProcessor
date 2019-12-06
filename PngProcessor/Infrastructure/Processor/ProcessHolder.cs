@@ -66,6 +66,8 @@ namespace PngProcessor.Infrastructure.Processor
                 _statusInfo.SetStatus(ProcessStatusEnum.Deleting);
                 _thread.Abort();
             }
+
+            OnWorkDone?.Invoke(this, new EventArgs());
         }
     }
 }
