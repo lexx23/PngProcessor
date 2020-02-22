@@ -20,8 +20,8 @@ namespace PngProcessor.Infrastructure.Processor
 
             _statusInfo = new ProcessStatusInfo();
             _thread = new Thread(WorkThread);
-
             _pngProcessor = new ImageProcessor.PngProcessor();
+// fix;
             _pngProcessor.ProgressChanged += _pngProcessor_ProgressChanged;
         }
 
